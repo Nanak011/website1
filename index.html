@@ -2,154 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Guru Nanak Adhikari - Portfolio</title>
-    <style>
-        /* Background Gradient Animation */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e90ff, #00bfff, #1e90ff);
-            background-size: 400% 400%;
-            animation: gradientAnimation 15s ease infinite;
-            color: #fff;
-        }
-
-        @keyframes gradientAnimation {
-            0% {background-position: 0% 50%;}
-            50% {background-position: 100% 50%;}
-            100% {background-position: 0% 50%;}
-        }
-
-        /* Wave-like Cursor Animation */
-        body {
-            cursor: url('wave-cursor.png'), auto;
-        }
-
-        /* Content Styling */
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 2.5em;
-            margin-top: 50px;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-
-        p {
-            font-size: 1.2em;
-            line-height: 1.6em;
-        }
-
-        .course {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            margin-bottom: 50px;
-            border-radius: 10px;
-            transition: transform 0.3s;
-        }
-
-        .course:hover {
-            transform: scale(1.05);
-        }
-
-        ul {
-            text-align: left;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
-        a {
-            color: #ffd700;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Additional Styles */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-            h2 {
-                font-size: 2em;
-            }
-            h3 {
-                font-size: 1.5em;
-            }
-            .container {
-                width: 90%;
-                padding: 30px 0;
-            }
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Guru Nanak Adhikari</h1>
-        <p>🌟 Passionate Learner | Aspiring Developer | Tech Enthusiast 🚀</p>
-
-        <h2>About Me</h2>
-        <p>Hello! I'm Guru Nanak Adhikari, an enthusiastic individual with a keen interest in technology and software development. I love exploring new technologies and applying them to revolutionize processes and solve real-world problems.</p>
-
-        <h2>Recent Achievements</h2>
-
-        <div class="course">
-            <h3>Using Generative AI for Software Development - IBM</h3>
-            <p>🌟 Excited to share that I’ve just completed an online course from IBM on Using Generative AI for Software Development! 🚀 This course has broadened my understanding of how generative AI can revolutionize the software development process, from ideation to implementation.</p>
-            <p>Grateful to IBM for this incredible learning opportunity and for the digital sticker that celebrates this milestone. Looking forward to applying these insights in future projects! 💡✨</p>
-            <p><em>#GenerativeAI #SoftwareDevelopment #LearningJourney #IBM</em></p>
-        </div>
-
-        <div class="course">
-            <h3>Presenting with Purpose - IBM SkillsBuild</h3>
-            <p>🎤 Transforming Presentations: My Key Takeaways from "Presenting with Purpose". I’ve just completed an insightful course on how to present effectively, and I'm excited to share some powerful tips I’ve learned:</p>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
             <ul>
-                <li><strong>Everyone is Nervous:</strong> Embrace nervousness as energy. It peaks in the first 5 minutes and drops rapidly after you begin!</li>
-                <li><strong>Understand Your Purpose:</strong> Know what you want your audience to gain – knowledge, action, or emotion.</li>
-                <li><strong>Your Presentation Starts Before You Speak:</strong> First impressions matter the moment the audience sees you.</li>
-                <li><strong>Start with a Bang:</strong> Grab attention with a shocking statistic, question, or story.</li>
-                <li><strong>Master Storytelling:</strong> Every great story has a setting, a problem, a journey, and a powerful outcome.</li>
-                <li><strong>Use Questions Wisely:</strong> Engage with simple questions, building to more challenging ones.</li>
-                <li><strong>Control Your Pace:</strong> Adjust your speed to maintain interest and aid understanding.</li>
-                <li><strong>Strategic Q&A Sessions:</strong> Include them throughout, and always end with your main idea.</li>
-                <li><strong>Leave a Lasting Impression:</strong> Summarize key takeaways; people remember the last thing you say.</li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <p>💡 Presenting with purpose is about connecting, inspiring, and leaving your audience with something unforgettable.</p>
-            <p><em>#PublicSpeaking #PresentationSkills #LeadershipDevelopment</em></p>
-        </div>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Cybersecurity.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>.</p>
+    </section>
 
-        <div class="course">
-            <h3>AWS Cloud Practitioner Essentials</h3>
-            <p>☁️ Excited to share that I have completed the AWS Cloud Practitioner Essentials course! ✅ This journey has helped me gain a foundational understanding of cloud computing, AWS services, and best practices for cloud adoption.</p>
-            <p>With cloud technology playing a crucial role in modern computing, I’m eager to explore more advanced topics and apply these insights in real-world scenarios.</p>
-            <p><em>#AWS #CloudComputing #Learning #Tech #Communication #ContinuousLearning</em></p>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate-container">
+            <img src="aws_certificate.jpg" alt="AWS Cloud Practitioner Essentials Certificate">
+            <img src="java_certificate.jpg" alt="Presenting with Purpose Certificate">
+            <img src="ibm_ai_certificate.jpg" alt="Using Generative AI for Software Development Certificate">
         </div>
+    </section>
 
-        <h2>Connect with Me</h2>
-        <p>Feel free to reach out on <a href="https://www.linkedin.com/in/gurunanak-adhikari-b38aa52b2" target="_blank">LinkedIn</a> or email me at <a href="mailto:gurunanakadhikari1@gmail.com">gurunanakadhikari1@gmail.com</a>.</p>
-    </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via LinkedIn or email.</p>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
