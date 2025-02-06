@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurunanak Adhikari - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #001f3f, #003366);
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #00aaff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a {
+            color: #00aaff;
+        }
+        .cursor {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            pointer-events: none;
+            transition: transform 0.15s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+    </style>
+</head>
+<body>
+    <div class="cursor" id="cursor"></div>
+    <header>
+        <h1>Gurunanak Adhikari</h1>
+        <p>Computer Science Student | Cybersecurity Enthusiast | Software Developer</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science student passionate about cybersecurity, networking, and software development. I enjoy learning new technologies and working on innovative projects.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>LifeNext - Guidance for Rural Areas</li>
+            <li>Smart Dustbin - IoT Waste Management Solution</li>
+            <li>IDS/IPS Tool Simulation and Comparative Analysis</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: gurunanak@example.com</p>
+    </section>
+    <footer>
+        <p>Connect with me:</p>
+        <a href="https://github.com/your-github" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
+    </footer>
+    <script>
+        let cursor = document.getElementById("cursor");
+        let posX = 0, posY = 0;
+        let mouseX = 0, mouseY = 0;
+
+        document.addEventListener("mousemove", function(event) {
+            mouseX = event.clientX - 10;
+            mouseY = event.clientY - 10;
+        });
+
+        function animateCursor() {
+            posX += (mouseX - posX) * 0.1;
+            posY += (mouseY - posY) * 0.1;
+            cursor.style.transform = `translate(${posX}px, ${posY}px)`;
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+    </script>
+</body>
+</html>
