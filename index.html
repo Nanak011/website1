@@ -1,48 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Welcome to the Virtual Lab</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to the Virtual Lab</h1>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Cybersecurity.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <p>.</p>
-    </section>
-
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <div class="certificate-container">
-            <img src="aws_certificate.jpg" alt="AWS Cloud Practitioner Essentials Certificate">
-            <img src="java_certificate.jpg" alt="Presenting with Purpose Certificate">
-            <img src="ibm_ai_certificate.jpg" alt="Using Generative AI for Software Development Certificate">
+    <main>
+        <h2>Select an Option to Get Started</h2>
+        <div class="button-container">
+            <button onclick="window.location.href='login.php'">Log In</button>
+            <button onclick="window.location.href='register.php'">Register</button>
+            <button onclick="window.location.href='experiments/guest_physics.html'">Guest Mode</button>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via LinkedIn or email.</p>
-    </section>
-
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
